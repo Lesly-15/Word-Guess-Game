@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Booknerd Word Guess Game </title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+    // Creating the categories for the game
+    var Authors = ["jane-austen", "gabriel-garcia-marquez"-"oscar-wilde", "arthur-connan-doyle", "jules-verne", "anne-rice", "stephen-king", "j-k-rowling", "agatha-christie", "haruki-murakami"];
+    var Titles = ["pride-and-predjudice", "love-in-time-of-cholera", "the-ghost-of-canterville", "the-sign-of-four", "the-mysterious-island", "interview-with-a-vampire", "it", "harry-potter", "the-body-in-the-library", "tokio-blues"];
+    var Characters = ["mr-darcy", "aureliano-buendia", "dorian-gray", "sherlock-holmes","captain-nemo", "lestat","carrie", "hagrid", "miss-marple", "toru-watanabe"];
+    
+    // this are my counters
+    var win=0;
+    var loose=0;
+    var played= 0;
+    var remaining= 15;
+
+    // game picks one random word (trying with 1 category first)
+    var word= Authors [Math.floor(Math.random () * Authors.length)];
+    
+    console.log("Authors " + word);
+    
+    </script>
+    
+</body>
+</html>
