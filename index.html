@@ -9,23 +9,54 @@
 
 <body>
 
+    <!-- THIS HANGMAN CODE WAS WRITTEN USING JS4KIDS BY NICK MORGAN (2015), CHAPTER 7 -->
+
     <script type="text/javascript">
+
     // Creating the categories for the game
-    var Authors = ["jane-austen", "gabriel-garcia-marquez"-"oscar-wilde", "arthur-connan-doyle", "jules-verne", "anne-rice", "stephen-king", "j-k-rowling", "agatha-christie", "haruki-murakami"];
-    var Titles = ["pride-and-predjudice", "love-in-time-of-cholera", "the-ghost-of-canterville", "the-sign-of-four", "the-mysterious-island", "interview-with-a-vampire", "it", "harry-potter", "the-body-in-the-library", "tokio-blues"];
-    var Characters = ["mr-darcy", "aureliano-buendia", "dorian-gray", "sherlock-holmes","captain-nemo", "lestat","carrie", "hagrid", "miss-marple", "toru-watanabe"];
-    
-    // this are my counters
-    var win=0;
-    var loose=0;
-    var played= 0;
-    var remaining= 15;
+
+    var Testing = ["apple", "boat", "cup", "darling"]
+    // var Authors = ["jane-austen", "gabriel-garcia-marquez"-"oscar-wilde", "arthur-connan-doyle", "jules-verne", "anne-rice", "stephen-king", "j-k-rowling", "agatha-christie", "haruki-murakami"];
+    // var Titles = ["pride-and-predjudice", "love-in-time-of-cholera", "the-ghost-of-canterville", "the-sign-of-four", "the-mysterious-island", "interview-with-a-vampire", "it", "harry-potter", "the-body-in-the-library", "tokio-blues"];
+    // var Characters = ["mr-darcy", "aureliano-buendia", "dorian-gray", "sherlock-holmes","captain-nemo", "lestat","carrie", "hagrid", "miss-marple", "toru-watanabe"];
 
     // game picks one random word (trying with 1 category first)
-    var word= Authors [Math.floor(Math.random () * Authors.length)];
+
+    var word= Testing [Math.floor(Math.random () * Testing.length)];
     
-    console.log("Authors " + word);
+    console.log(word);
+
+    // turning word length into dashes
+
+    var answerArray = [];
+    for (var i = 0; i < word.length ; i++) {
+        answerArray[i] = "_";
+    }
+
+    var remainingLetters = word.length;
+
+    console.log(remainingLetters);
+
+    // while (remainingLetters > 0){
     
+    // // // player guess the letter
+
+    // // document.onkeyup = function (event) {
+
+    // // var userGuess = event.key;
+
+    // // for (var j = 0; j< word.lenght; j++){
+    // //     if (word[j] === userGuess){
+    // //         answerArray[j] = userGuess;
+    
+    // // console.log(userGuess);
+    // //     }
+    // //    }
+    // //  }
+    // // }
+ 
+
+        
     </script>
     
 </body>
